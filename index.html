@@ -8,6 +8,17 @@
     <title>Document</title>
     <link href="/dist/output.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                customOrange: '#D14021',
+              }
+            }
+          }
+        }
+      </script>
 
 </head>
 
@@ -39,7 +50,7 @@
             </button>
         </div>
         <div class="grid md:grid-cols-3 gap-2">
-            <div class="h-[300px] w-44  bg-red-500 rounded"></div>
+            <div class="h-[300px] w-44  bg-customOrange rounded"></div>
             <div class="h-44 w-44 rounded-full  bg-red-500 "></div>
             <div class="h-44 w-44  bg-red-500 rounded"></div>
             <div class="h-44 w-44  bg-red-500 rounded"></div>
